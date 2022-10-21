@@ -1,6 +1,12 @@
 /* pouzivame intuitivnejsi box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 /*
  BARVY
@@ -14,20 +20,131 @@ https://fonts.google.com/specimen/Source+Sans+Pro
 */
 
 body {
-	padding: 0;
-	margin: 0;
-	background-color: #e5e5e5;
-	font-family: "Source Sans Pro", sans-serif;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #e5e5e5;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #25133d;
 }
 
 .obal {
-	max-width: 960px; /* obsah stránky je omezený do pruhu širokého max. 960px */
-	margin: 0 auto; /* pruh je na stránce vycentrovaný */
-	background: white;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  max-width: 960px; /* obsah stránky je omezený do pruhu širokého max. 960px */
+  margin: 0 auto; /* pruh je na stránce vycentrovaný */
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+
+/* ----- MENU ----- */
+
+.menu {
+  list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+  text-align: center;
+}
+.menu a {
+  border-top: 0.5px solid #48418e;
+  padding: 15px;
+}
+.logo {
+  font-weight: 700;
+}
+
+.menu a {
+  display: block;
+  color: #25133d;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+li:hover {
+  background-color: #48418e;
+}
+a:hover {
+  color: white;
+}
+a:focus {
+  font-weight: bold;
+}
+.logo:hover {
+  background-color: white;
+}
+
+/* ----- herosekce ----- */
+
+.pozadi {
+  background-image: url(/images/pozadi.jpg);
+  background-size: cover;
+  min-height: 450px;
+}
+
+.telefon {
+  display: block;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.nadpis {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 30px;
+  font-size: 50px;
+  font-weight: 400;
+}
+.leva {
+  text-align: center;
+
+  font-size: 30px;
+  font-weight: 300;
+  color: white;
+}
+
+.tlacitka {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  gap: 20px;
+}
+
+.tlacitka a {
+  padding: 10px 20px 10px 20px;
+  font-size: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+.stahnout {
+  background-color: #48418e;
+  font-weight: 400;
+}
+
+.karta {
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.ikony {
+  max-width: 30%;
+  width: 100%;
+}
+
+.paticka {
+  margin-bottom: 0;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  background-color: #48418e;
+}
+
+/*--------------------- Tablet--------------------- */
+
+@media screen and (min-width: 768px) {
+}
