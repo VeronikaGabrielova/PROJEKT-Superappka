@@ -42,15 +42,15 @@ body {
 /* ----- MENU ----- */
 
 .menu {
-  list-style: none;
   margin-bottom: 0;
   margin-top: 0;
   padding-left: 0;
   text-align: center;
+  list-style: none;
 }
 .menu a {
-  border-top: 0.5px solid #48418e;
   padding: 15px;
+  border-top: 0.5px solid #48418e;
 }
 .logo {
   font-weight: 700;
@@ -58,42 +58,30 @@ body {
 
 .menu a {
   display: block;
-  color: #25133d;
   padding: 10px 15px;
+  color: #25133d;
+
   text-decoration: none;
 }
 li:hover {
   background-color: #48418e;
 }
-a:hover {
-  color: white;
-}
-
 .logo:hover {
   background-color: white;
+}
+
+a:hover {
+  color: white;
 }
 
 /* ----- herosekce ----- */
 
 .pozadi {
+  min-height: 450px;
   background-image: url(/images/pozadi.jpg);
   background-size: cover;
-  min-height: 450px;
 }
 
-.telefon {
-  display: block;
-  width: 100%;
-  margin-top: 50px;
-}
-
-.nadpis {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 30px;
-  font-size: 50px;
-  font-weight: 400;
-}
 .leva {
   text-align: center;
 
@@ -101,7 +89,13 @@ a:hover {
   font-weight: 300;
   color: white;
 }
-
+.nadpis {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 30px;
+  font-size: 60px;
+  font-weight: 400;
+}
 .tlacitka {
   display: flex;
   justify-content: center;
@@ -112,15 +106,22 @@ a:hover {
 
 .tlacitka a {
   padding: 10px 20px 10px 20px;
-  font-size: 20px;
+
   border: 1px solid white;
   border-radius: 5px;
+  font-size: 20px;
   color: white;
   text-decoration: none;
 }
 .stahnout {
   background-color: #48418e;
   font-weight: 400;
+}
+
+.telefon {
+  display: block;
+  margin-top: 50px;
+  width: 100%;
 }
 
 .karta {
@@ -152,8 +153,8 @@ a:hover {
   }
 
   .menu a {
-    border: 0;
     padding: 15px 30px 15px 30px;
+    border: 0;
   }
   .logo {
     padding: 15px 30px 15px 30px;
@@ -162,36 +163,31 @@ a:hover {
   .flexbox {
     display: flex;
     justify-content: space-between;
+    min-height: 450px;
   }
 
   .leva {
     margin-top: 60px;
-    text-align: left;
     padding-left: 30px;
+    text-align: left;
+  }
+
+  .nadpis {
+    padding-top: 0;
+    min-width: 500px;
+    font-size: 90px;
+  }
+  .tlacitka {
+    justify-content: left;
+    text-align: center;
   }
   .prava {
     display: flex;
   }
   .telefon {
     padding-top: 20px;
-    align-items: flex-end;
+    align-self: flex-end;
   }
-
-  .nadpis {
-    padding-top: 0;
-
-    font-size: 60px;
-  }
-
-  .tlacitka {
-    justify-content: left;
-    text-align: center;
-  }
-
-  .stahnout {
-    flex-wrap: nowrap;
-  }
-
   .karty {
     display: flex;
   }
