@@ -78,7 +78,7 @@ a:hover {
 
 .pozadi {
   min-height: 450px;
-  background-image: url(/images/pozadi.jpg);
+  background-image: url(images/pozadi.jpg);
   background-size: cover;
 }
 
